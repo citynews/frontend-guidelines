@@ -300,7 +300,38 @@ $breakpoints: (
 // Nope
 $breakpoints: ( small: 767px, medium: 992px, large: 1200px );
 ```
+### Custom properties
+Use custom properties to define dynamic values changing in your design due to some conditions.
 
+**CSS Property**
+
+Use the custom property for a single CSS property. Names should be equivalent.
+
+```scss
+// Custom property composition
+--{component}-{css-property}
+
+// Example
+--header-background
+--header-color
+—-header-background-image
+—-header-font-size
+—-header-width
+—-header-height
+```
+
+**CSS Property Category**
+
+Use a single custom property for multiple CSS properties
+
+Property categories:
+ - Size: width, height
+ - Spacing: margin, padding
+
+```scss
+—-button-size
+-—button-spacing
+```
 
 ---------------
 
