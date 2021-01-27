@@ -18,22 +18,19 @@ A one-page document to help your team establish effective frontend guidelines, s
 
 ---------------
 
-## CSS
+## CSS / Sass / Scss
 
 ## Principles
-- **What are some general principles your team should follow when writing CSS?** *(For example, modularity, avoiding long selector strings, etc. See [these](http://cssguidelin.es/) [resources](http://www.yellowshoe.com.au/standards/#css) [for](http://manuals.gravitydept.com/code/css) [inspiration](http://codeguide.co/#css))*
+- **[The Single Responsibility Principle](https://cssguidelin.es/#the-single-responsibility-principle)**, our CSS should be composed of a series of much smaller classes that focus on providing very specific and limited functionality;
+- **[OOCSS](https://cssguidelin.es/#object-orientation)**, separaing the UIs into structure and skin; recycle common and recurring design patterns without having to necessarily recycle their specific implementation details at the same time.
+- **[Open/Close principle](https://cssguidelin.es/#the-openclosed-principle)** - any additions, new functionality, or features we add to our classes should be added via extension (modifier in BEM)
+- **[DRY](https://cssguidelin.es/#dry)** - which stands for *Don’t Repeat Repeat Yourself*; the key isn’t to avoid all repetition, but to **normalise and abstract meaningful repetition**
 
 ## Methodology
-We adopt [BEM](https://en.bem.info/method/) methodology.
-- **Are you deviating from the methodology in any way?** If so, can you highlight these conventions?
+We adopt [BEM](https://en.bem.info/method/) methodology, the strict way.
 
 ## Tools
-- **Is the team using a preprocessor** *(such as [Sass](http://sass-lang.com/) or [Less](http://lesscss.org/))*?
-- **What are the guidelines for using that preprocessor** *(check out [Sass Guidelines](https://sass-guidelin.es/) for inspiration)*?
-- **Are you using a CSS base** *(such as [Normalize](https://necolas.github.io/normalize.css/) or a [reset](http://meyerweb.com/eric/tools/css/reset/))*?
-- **Are you using any CSS postprocessors** *(such as [Prefixfree](https://leaverou.github.io/prefixfree/) or [Autoprefixer](https://github.com/postcss/autoprefixer))*?
-- **Are there specific CSS techniques you're utilizing** *(such as [critical CSS](https://www.smashingmagazine.com/2015/08/understanding-critical-css/))*?
-
+- We use Sass preprocessor following some [Syntax](#syntax) guidelines
 
 ## Syntax
 
